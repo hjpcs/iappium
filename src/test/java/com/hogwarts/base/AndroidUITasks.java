@@ -64,7 +64,7 @@ public class AndroidUITasks {
      * @throws Exception
      */
     public static void clickOKBtnOnConfirmUI(AppiumDriver driver) throws Exception{
-        List<WebElement> btnEles = findObjectsByXPath("//android.widget.Button[contains(@resource-id,'android:id/button1')]", driver);
+        List<WebElement> btnEles = findObjectsByXPath("//android.widget.Button[contains(@resource-id,'android:id/aerr_close') or contains(@resource-id,'android:id/aerr_restart')]", driver);
         btnEles.get(0).click();
         logger.info("Click the OK button！");
     }
